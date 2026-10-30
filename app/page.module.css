@@ -1,0 +1,330 @@
+.main {
+  background: var(--navy);
+}
+
+/* ---------- Botões ---------- */
+
+.btnOrange,
+.btnNavy,
+.btnSmall {
+  display: inline-block;
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--white);
+  transition: background 0.2s;
+}
+
+.btnOrange {
+  background: var(--orange);
+  font-size: 20px;
+  padding: 14px 42px;
+}
+
+.btnOrange:hover {
+  background: var(--orange-dark);
+}
+
+.btnBlock {
+  display: block;
+  width: 100%;
+}
+
+.btnNavy {
+  background: var(--navy);
+  font-size: 15px;
+  padding: 12px 30px;
+}
+
+.btnNavy:hover {
+  background: var(--navy-light);
+}
+
+.btnSmall {
+  background: var(--orange);
+  font-size: 10px;
+  padding: 4px 12px;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.btnSmall:hover {
+  background: var(--orange-dark);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 620px;
+  padding: 80px 24px;
+  text-align: center;
+  background-color: var(--navy-light);
+  background-image: linear-gradient(rgba(61, 75, 107, 0.78), rgba(61, 75, 107, 0.78)),
+    url(/images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  border-bottom: 6px solid rgba(255, 255, 255, 0.15);
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroTitle {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 1.45;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.heroText {
+  margin: 8px 0 32px;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: var(--white);
+}
+
+/* ---------- Seções ---------- */
+
+.section {
+  padding: 50px 0 60px;
+}
+
+.sectionTitle {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--orange);
+  padding: 10px 0;
+  margin-bottom: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.07) 20%,
+    rgba(255, 255, 255, 0.07) 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* ---------- Sobre ---------- */
+
+.aboutCard {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 50px;
+  background: var(--white);
+  padding: 56px 38px;
+  margin: 0 -18px;
+}
+
+.aboutLogo {
+  display: grid;
+  place-items: center;
+  background: var(--navy);
+  aspect-ratio: 1 / 1.13;
+  padding: 40px;
+}
+
+.aboutLogo svg {
+  width: 100%;
+}
+
+.aboutBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.aboutText {
+  border-left: 2px solid var(--orange);
+  padding-left: 26px;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 1.6;
+  color: #333a4a;
+}
+
+.aboutText strong {
+  font-weight: 600;
+}
+
+/* ---------- Serviços ---------- */
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 36px;
+  padding: 0 34px;
+  margin-top: 20px;
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+}
+
+.serviceImage {
+  height: 180px;
+  background-color: var(--navy-light);
+  background-size: cover;
+  background-position: center;
+}
+
+.serviceBody {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 16px 12px 10px;
+}
+
+.serviceBody h3 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.serviceBody ul {
+  padding-left: 22px;
+  margin-bottom: 14px;
+  font-size: 15px;
+  line-height: 1.35;
+  color: var(--navy);
+}
+
+.serviceBody li + li {
+  margin-top: 8px;
+}
+
+/* ---------- Perguntas frequentes ---------- */
+
+.faq {
+  padding: 0 34px;
+  margin-top: 20px;
+}
+
+/* ---------- CTA ---------- */
+
+.ctaSection {
+  padding-top: 40px;
+  background: linear-gradient(var(--navy) 0 70%, var(--cream) 70% 100%);
+}
+
+.ctaBox {
+  background: var(--orange);
+  text-align: center;
+  padding: 44px 60px 36px;
+  margin: 0 -28px;
+}
+
+.ctaBox h2 {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 14px;
+}
+
+.ctaBox p {
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--navy);
+  margin-bottom: 36px;
+}
+
+/* ---------- Responsivo ---------- */
+
+@media (max-width: 1000px) {
+  .heroTitle {
+    font-size: 36px;
+  }
+
+  .aboutCard {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin: 0;
+  }
+
+  .aboutLogo {
+    aspect-ratio: auto;
+    padding: 60px 40px;
+  }
+
+  .aboutLogo svg {
+    max-width: 320px;
+  }
+
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+
+  .faq {
+    padding: 0;
+  }
+
+  .ctaBox {
+    margin: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 460px;
+  }
+
+  .heroTitle {
+    font-size: 28px;
+  }
+
+  .heroText {
+    font-size: 18px;
+  }
+
+  .sectionTitle,
+  .ctaBox h2 {
+    font-size: 30px;
+  }
+
+  .aboutCard {
+    padding: 24px 20px;
+  }
+
+  .aboutText {
+    font-size: 18px;
+    padding-left: 16px;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaBox {
+    padding: 32px 20px;
+  }
+
+  .ctaBox p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,15 @@
+Coloque aqui as fotos do site (formato .jpg). Enquanto não existirem,
+o site mostra um fundo azul/cinza no lugar.
+
+  hero.jpg                                  -> fundo do topo da Home (prancheta/planta)
+  contato.jpg                               -> foto da página Contato (capacete/ferramentas)
+  servicos/combate-a-incendio.jpg
+  servicos/seguranca-do-trabalho.jpg
+  servicos/alvaras.jpg
+  servicos/regularizacao-de-imoveis.jpg
+  servicos/acessibilidade.jpg
+  servicos/licenciamento-ambiental.jpg
+
+As fotos atuais são de banco de imagens gratuito (Unsplash, licença livre para uso
+comercial, sem necessidade de crédito). Substitua por fotos reais da D'Lima quando
+houver, mantendo os mesmos nomes de arquivo. sobre.jpg -> idealmente uma foto da Débora.

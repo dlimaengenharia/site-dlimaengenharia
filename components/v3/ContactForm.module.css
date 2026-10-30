@@ -1,0 +1,164 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 36px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: linear-gradient(160deg, rgba(31, 44, 75, 0.9), rgba(19, 28, 49, 0.95));
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+.kicker {
+  font-family: var(--font-v3-mono), monospace;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.form h2 {
+  margin-top: -8px;
+  font-family: var(--font-v3-display), sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.form > p {
+  margin-top: -10px;
+  font-size: 15px;
+  color: var(--text-dim);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.form input[type="text"],
+.form input:not([type]),
+.form input[type="tel"],
+.form textarea {
+  font: inherit;
+  font-size: 15px;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  padding: 13px 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: var(--text-dim);
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 3px rgba(255, 138, 61, 0.2);
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.services legend {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.services input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form .chip,
+.form .chipOn {
+  flex-direction: row;
+  font-size: 13.5px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+
+.form .chip:hover {
+  border-color: rgba(255, 138, 61, 0.6);
+}
+
+.form .chip:focus-within,
+.form .chipOn:focus-within {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+}
+
+.form .chipOn {
+  color: var(--ink);
+  background: var(--orange);
+  border-color: var(--orange);
+}
+
+.form button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 4px;
+  font: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--ink);
+  background: var(--orange);
+  border: 0;
+  border-radius: 999px;
+  padding: 16px 28px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.form button:hover {
+  box-shadow: 0 10px 40px var(--orange-glow);
+}
+
+.form button svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 640px) {
+  .form {
+    padding: 26px 20px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

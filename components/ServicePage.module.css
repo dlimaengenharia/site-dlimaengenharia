@@ -1,0 +1,500 @@
+/* ---------- Temas: cada versão define as mesmas variáveis ---------- */
+
+.v1 {
+  --sp-bg: var(--cream);
+  --sp-alt: #f1e8e1;
+  --sp-hero: var(--navy);
+  --sp-hero-text: #ffffff;
+  --sp-hero-muted: rgba(255, 255, 255, 0.82);
+  --sp-card: #ffffff;
+  --sp-border: #eadfd6;
+  --sp-title: var(--navy);
+  --sp-text: #333a4a;
+  --sp-muted: #5b6375;
+  --sp-accent: var(--orange);
+  --sp-accent-hover: var(--orange-dark);
+  --sp-on-accent: #ffffff;
+  --sp-faq-bg: var(--navy);
+  --sp-faq-title: #ffffff;
+  --sp-radius: 0px;
+  --sp-display: var(--font-display), sans-serif;
+  --sp-body: var(--font-body), sans-serif;
+  --sp-top: 64px;
+  --sp-case: uppercase;
+}
+
+.v2 {
+  --sp-bg: #ffffff;
+  --sp-alt: var(--v2-cream);
+  --sp-hero: var(--v2-navy);
+  --sp-hero-text: #ffffff;
+  --sp-hero-muted: rgba(255, 255, 255, 0.82);
+  --sp-card: #ffffff;
+  --sp-border: var(--v2-line);
+  --sp-title: var(--v2-navy);
+  --sp-text: var(--v2-text);
+  --sp-muted: var(--v2-muted);
+  --sp-accent: var(--v2-orange-strong);
+  --sp-accent-hover: var(--v2-orange-hover);
+  --sp-on-accent: #ffffff;
+  --sp-faq-bg: var(--v2-cream);
+  --sp-faq-title: var(--v2-navy);
+  --sp-radius: var(--v2-radius);
+  --sp-display: var(--font-display), sans-serif;
+  --sp-body: var(--font-v2-body), sans-serif;
+  --sp-top: 56px;
+  --sp-case: none;
+}
+
+.v3 {
+  --sp-bg: var(--ink);
+  --sp-alt: var(--ink-2);
+  --sp-hero: var(--ink);
+  --sp-hero-text: #ffffff;
+  --sp-hero-muted: var(--text);
+  --sp-card: rgba(255, 255, 255, 0.03);
+  --sp-border: var(--line-strong);
+  --sp-title: #ffffff;
+  --sp-text: var(--text);
+  --sp-muted: var(--text-dim);
+  --sp-accent: var(--orange);
+  --sp-accent-hover: var(--orange-2);
+  --sp-on-accent: var(--ink);
+  --sp-faq-bg: var(--ink-2);
+  --sp-faq-title: #ffffff;
+  --sp-radius: 14px;
+  --sp-display: var(--font-v3-display), sans-serif;
+  --sp-body: var(--font-v3-body), sans-serif;
+  --sp-top: 132px;
+  --sp-case: uppercase;
+}
+
+/* ---------- Estrutura ---------- */
+
+.page {
+  background: var(--sp-bg);
+  color: var(--sp-text);
+  font-family: var(--sp-body);
+}
+
+.container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.alt {
+  background: var(--sp-alt);
+}
+
+.h2 {
+  font-family: var(--sp-display);
+  font-weight: 600;
+  font-size: clamp(28px, 3.4vw, 40px);
+  line-height: 1.1;
+  text-transform: var(--sp-case);
+  color: var(--sp-title);
+  margin-bottom: 28px;
+}
+
+/* ---------- Topo ---------- */
+
+.hero {
+  background: var(--sp-hero);
+  color: var(--sp-hero-text);
+  padding: var(--sp-top) 0 72px;
+}
+
+.v3 .hero {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--sp-hero-muted);
+  margin-bottom: 32px;
+}
+
+.breadcrumb a:hover {
+  color: var(--sp-accent);
+}
+
+.breadcrumb [aria-current] {
+  color: var(--sp-hero-text);
+  font-weight: 600;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--sp-accent);
+  margin-bottom: 16px;
+}
+
+.tag svg {
+  width: 22px;
+  height: 22px;
+}
+
+.hero h1 {
+  font-family: var(--sp-display);
+  font-weight: 700;
+  font-size: clamp(34px, 4.6vw, 56px);
+  line-height: 1.05;
+  text-transform: var(--sp-case);
+  margin-bottom: 20px;
+}
+
+.intro {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--sp-hero-muted);
+  margin-bottom: 12px;
+  max-width: 600px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.primary,
+.secondary,
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 15px 26px;
+  border-radius: calc(var(--sp-radius) * 100);
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.primary svg,
+.ctaButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+.primary {
+  background: var(--sp-accent);
+  color: var(--sp-on-accent);
+}
+
+.primary:hover {
+  background: var(--sp-accent-hover);
+  transform: translateY(-2px);
+}
+
+.secondary {
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  color: var(--sp-hero-text);
+}
+
+.secondary:hover {
+  border-color: var(--sp-hero-text);
+}
+
+.heroImage {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--sp-radius);
+  background-color: rgba(255, 255, 255, 0.08);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+}
+
+.v3 .heroImage {
+  border: 1px solid var(--line-strong);
+}
+
+/* ---------- Para quem é / O que inclui ---------- */
+
+.split {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 64px;
+}
+
+.checks {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.checks li {
+  display: flex;
+  gap: 12px;
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--sp-text);
+}
+
+.checks svg {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  border-radius: 50%;
+  background: var(--sp-accent);
+  color: var(--sp-on-accent);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  background: var(--sp-card);
+  border: 1px solid var(--sp-border);
+  border-top: 3px solid var(--sp-accent);
+  border-radius: var(--sp-radius);
+  padding: 22px;
+}
+
+.card h3 {
+  font-family: var(--sp-display);
+  font-weight: 600;
+  font-size: 21px;
+  color: var(--sp-title);
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--sp-muted);
+}
+
+/* ---------- Como funciona ---------- */
+
+.steps {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.steps li {
+  background: var(--sp-card);
+  border: 1px solid var(--sp-border);
+  border-radius: var(--sp-radius);
+  padding: 24px;
+}
+
+.stepNum {
+  display: block;
+  font-family: var(--sp-display);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+  color: var(--sp-accent);
+  margin-bottom: 14px;
+}
+
+.steps h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--sp-title);
+  margin-bottom: 6px;
+}
+
+.steps p {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--sp-muted);
+}
+
+/* ---------- Perguntas frequentes ---------- */
+
+.faq {
+  background: var(--sp-faq-bg);
+}
+
+.faq .h2 {
+  color: var(--sp-faq-title);
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ---------- CTA ---------- */
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 48px;
+  border-radius: var(--sp-radius);
+  background: var(--sp-accent);
+  color: var(--sp-on-accent);
+}
+
+.cta h2 {
+  font-family: var(--sp-display);
+  font-weight: 700;
+  font-size: clamp(26px, 3vw, 36px);
+  line-height: 1.1;
+  text-transform: var(--sp-case);
+  margin-bottom: 10px;
+}
+
+.cta p {
+  max-width: 560px;
+  font-size: 16.5px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.ctaButton {
+  flex: none;
+  background: var(--sp-hero);
+  color: #ffffff;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------- Outros serviços ---------- */
+
+.others {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.other {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid var(--sp-border);
+  border-radius: var(--sp-radius);
+  background: var(--sp-card);
+  font-weight: 600;
+  color: var(--sp-title);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.other:hover {
+  border-color: var(--sp-accent);
+  transform: translateY(-3px);
+}
+
+.otherIcon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--sp-accent);
+  color: var(--sp-on-accent);
+}
+
+.otherIcon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.otherArrow {
+  width: 18px;
+  height: 18px;
+  margin-top: auto;
+  color: var(--sp-accent);
+}
+
+/* ---------- Responsivo ---------- */
+
+@media (max-width: 1000px) {
+  .heroGrid,
+  .split,
+  .faqGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .heroImage {
+    max-width: 560px;
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .others {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .v3 {
+    --sp-top: 100px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .intro {
+    font-size: 16.5px;
+  }
+
+  .actions a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cards,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .others {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cta {
+    padding: 32px 22px;
+  }
+}

@@ -1,0 +1,49 @@
+:root {
+  --navy: #3d4b6b;
+  --navy-light: #4a5878;
+  --orange: #f99a52;
+  --orange-dark: #ee8536;
+  --cream: #faf3ee;
+  --white: #ffffff;
+  --text: #3d4b6b;
+
+  --container: 1100px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body), sans-serif;
+  color: var(--text);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}

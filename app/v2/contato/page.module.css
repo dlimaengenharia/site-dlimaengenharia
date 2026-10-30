@@ -1,0 +1,135 @@
+.head {
+  background-color: var(--v2-navy);
+  background-image: linear-gradient(90deg, rgba(34, 43, 64, 0.95), rgba(34, 43, 64, 0.7)),
+    url(/images/contato.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 72px 0 120px;
+  color: var(--v2-white);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-display), sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--v2-orange);
+  margin-bottom: 12px;
+}
+
+.head h1 {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.head p {
+  margin-top: 12px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.content {
+  background: var(--v2-cream);
+  padding-bottom: 96px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  transform: translateY(-64px);
+  margin-bottom: -64px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.channels {
+  list-style: none;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--v2-white);
+  border-radius: var(--v2-radius);
+  box-shadow: var(--v2-shadow);
+}
+
+.channels a,
+.channels div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--v2-navy);
+  word-break: break-word;
+  transition: background 0.2s;
+}
+
+.channels a:hover {
+  background: var(--v2-cream);
+}
+
+.channels small {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--v2-muted);
+}
+
+.channelIcon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--v2-navy);
+  color: var(--v2-white);
+}
+
+.channelIcon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.map {
+  flex: 1;
+  width: 100%;
+  min-height: 240px;
+  border: 0;
+  border-radius: var(--v2-radius);
+  box-shadow: var(--v2-shadow);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .head {
+    padding: 48px 0 100px;
+  }
+
+  .head h1 {
+    font-size: 38px;
+  }
+
+  .content {
+    padding-bottom: 64px;
+  }
+}

@@ -1,0 +1,39 @@
+/* A versão 2 tem cabeçalho próprio: esconde o cabeçalho da versão 1
+   (renderizado pelo layout raiz) apenas nas páginas que estão em /v2. */
+body:has([data-v2]) > header {
+  display: none;
+}
+
+body:has([data-v2]) {
+  background: #ffffff;
+}
+
+[data-v2] {
+  --v2-navy: #2f3b56;
+  --v2-navy-2: #3d4b6b;
+  --v2-navy-dark: #222b40;
+  --v2-orange: #f99a52;
+  --v2-orange-strong: #d9661f;
+  --v2-orange-hover: #c25717;
+  --v2-cream: #faf3ee;
+  --v2-white: #ffffff;
+  --v2-text: #3a4255;
+  --v2-muted: #6b7386;
+  --v2-line: #e6e1dc;
+
+  --v2-radius: 10px;
+  --v2-shadow: 0 10px 30px rgba(34, 43, 64, 0.1);
+  --v2-shadow-hover: 0 18px 40px rgba(34, 43, 64, 0.18);
+
+  font-family: var(--font-v2-body), sans-serif;
+  color: var(--v2-text);
+  scroll-padding-top: 90px;
+}
+
+[data-v2] .v2-container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}

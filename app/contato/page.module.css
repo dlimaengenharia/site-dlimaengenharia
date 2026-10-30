@@ -1,0 +1,123 @@
+.main {
+  padding: 84px 0 150px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 748fr 424fr;
+  box-shadow: 4px 5px 6px rgba(61, 75, 107, 0.35);
+}
+
+.info {
+  background: var(--navy);
+  color: var(--white);
+  padding: 88px 40px 64px 86px;
+}
+
+.info h1 {
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.lead {
+  margin: 18px 0 44px;
+  max-width: 500px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.list a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 2px;
+  word-break: break-all;
+  transition: color 0.2s;
+}
+
+.list a:hover {
+  color: var(--orange);
+}
+
+.list svg {
+  flex: none;
+  width: 44px;
+  height: 44px;
+}
+
+.image {
+  min-height: 420px;
+  background-color: #c9c7c4;
+  background-image: url(/images/contato.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 1000px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    padding: 48px 32px;
+  }
+
+  .info h1 {
+    font-size: 48px;
+  }
+
+  .lead {
+    font-size: 26px;
+  }
+
+  .list a {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  .list svg {
+    width: 34px;
+    height: 34px;
+  }
+
+  .image {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main {
+    padding: 40px 0 60px;
+  }
+
+  .info {
+    padding: 36px 20px;
+  }
+
+  .info h1 {
+    font-size: 38px;
+  }
+
+  .lead {
+    font-size: 20px;
+  }
+
+  .list a {
+    font-size: 16px;
+    gap: 14px;
+  }
+}

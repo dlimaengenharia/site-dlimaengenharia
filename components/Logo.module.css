@@ -1,0 +1,32 @@
+.logo {
+  display: block;
+  height: auto;
+}
+
+.lines {
+  stroke: var(--orange);
+}
+
+.name {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.sub {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  letter-spacing: 2px;
+}
+
+.light .name,
+.light .sub {
+  fill: var(--white);
+}
+
+.dark .name,
+.dark .sub {
+  fill: var(--navy);
+}

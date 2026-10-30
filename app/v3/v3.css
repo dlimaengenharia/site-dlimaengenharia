@@ -1,0 +1,61 @@
+/* A v3 tem cabeçalho próprio: esconde o cabeçalho da v1 (layout raiz) só em /v3. */
+body:has([data-v3]) > header {
+  display: none;
+}
+
+body:has([data-v3]) {
+  background: #0d1424;
+}
+
+[data-v3] {
+  --ink: #0d1424;
+  --ink-2: #131c31;
+  --panel: #18233d;
+  --panel-2: #1f2c4b;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.16);
+  --text: #c5cee0;
+  --text-dim: #8b96ad;
+  --white: #ffffff;
+  --orange: #ff8a3d;
+  --orange-2: #ff6b1a;
+  --orange-glow: rgba(255, 138, 61, 0.35);
+  --light: #f4f6fa;
+  --light-text: #4a5468;
+  --navy: #1b2740;
+
+  --radius: 16px;
+  --radius-sm: 10px;
+
+  font-family: var(--font-v3-body), sans-serif;
+  color: var(--text);
+  background: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+[data-v3] .v3-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+[data-v3] ::selection {
+  background: var(--orange);
+  color: var(--ink);
+}
+
+html:has([data-v3]) {
+  scroll-padding-top: 80px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-v3] *,
+  [data-v3] *::before,
+  [data-v3] *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

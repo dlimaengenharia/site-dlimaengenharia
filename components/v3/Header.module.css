@@ -1,0 +1,151 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  border-bottom: 1px solid transparent;
+  transition: background 0.3s, border-color 0.3s, backdrop-filter 0.3s;
+}
+
+.solid {
+  background: rgba(13, 20, 36, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom-color: var(--line);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+}
+
+.logo {
+  width: 136px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.nav {
+  display: flex;
+  gap: 6px;
+  padding: 5px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.nav a {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  padding: 8px 16px;
+  border-radius: 999px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav a:hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.nav a.active {
+  color: var(--ink);
+  background: var(--white);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ink);
+  background: var(--orange);
+  padding: 11px 20px;
+  border-radius: 999px;
+  box-shadow: 0 0 0 0 var(--orange-glow);
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.cta:hover {
+  box-shadow: 0 0 0 6px var(--orange-glow);
+  transform: translateY(-1px);
+}
+
+.cta svg {
+  width: 19px;
+  height: 19px;
+}
+
+.toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  color: var(--white);
+  padding: 7px;
+  cursor: pointer;
+}
+
+.toggle svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 960px) {
+  .inner {
+    height: 66px;
+  }
+
+  .logo {
+    width: 112px;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    top: 66px;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px 24px 28px;
+    background: rgba(13, 20, 36, 0.97);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .nav {
+    flex-direction: column;
+    border: 0;
+    background: none;
+    padding: 0;
+  }
+
+  .nav a {
+    font-size: 18px;
+    padding: 12px 14px;
+    border-radius: 10px;
+  }
+
+  .cta {
+    justify-content: center;
+    padding: 14px 20px;
+  }
+}
