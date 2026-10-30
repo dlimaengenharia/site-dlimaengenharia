@@ -3,9 +3,3 @@ node_modules
 out
 .env*.local
 .DS_Store
-
-# Ferramentas locais
-.claude
-
-# Propostas comerciais (documentos internos, fora do repositório do site)
-proposta
