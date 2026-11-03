@@ -18,7 +18,7 @@ export default function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "64px 72px",
-          background: "#0d1424",
+          background: "#1f2839",
           backgroundImage:
             "linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)",
           backgroundSize: "48px 48px",
@@ -28,7 +28,7 @@ export default function OpengraphImage() {
       >
         <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
           <svg width="72" height="72" viewBox="0 0 64 64">
-            <g fill="none" stroke="#f99a52" strokeWidth="2.6" strokeLinejoin="round">
+            <g fill="none" stroke="#fc9a52" strokeWidth="2.6" strokeLinejoin="round">
               <path d="M8 54 H56" />
               <path d="M17 54 V30 H25 V54" />
               <path d="M25 54 V10 H37 V54" />
@@ -66,7 +66,7 @@ export default function OpengraphImage() {
 
         <div style={{ display: "flex", justifyContent: "space-between", fontSize: 24, color: "#c5cee0" }}>
           <span>(11) 98483-7520</span>
-          <span style={{ color: "#f99a52" }}>Solicite seu orçamento</span>
+          <span style={{ color: "#fc9a52" }}>Solicite seu orçamento</span>
         </div>
       </div>
     ),

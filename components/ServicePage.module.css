@@ -36,6 +36,8 @@
   --sp-muted: var(--v2-muted);
   --sp-accent: var(--v2-orange-strong);
   --sp-accent-hover: var(--v2-orange-hover);
+  --sp-accent-bg: var(--v2-orange);
+  --sp-accent-bg-hover: var(--v2-orange-dark);
   --sp-on-accent: #ffffff;
   --sp-faq-bg: var(--v2-cream);
   --sp-faq-title: var(--v2-navy);
@@ -202,12 +204,12 @@
 }
 
 .primary {
-  background: var(--sp-accent);
+  background: var(--sp-accent-bg, var(--sp-accent));
   color: var(--sp-on-accent);
 }
 
 .primary:hover {
-  background: var(--sp-accent-hover);
+  background: var(--sp-accent-bg-hover, var(--sp-accent-hover));
   transform: translateY(-2px);
 }
 

@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Logo from "@/components/Logo";
 import FaqList from "@/components/seo/FaqList";
 import JsonLd from "@/components/seo/JsonLd";
+import Reviews from "@/components/reviews/Reviews";
 import { services } from "@/lib/services";
 import { faqSchema } from "@/lib/seo";
 import styles from "./page.module.css";
@@ -87,6 +88,15 @@ export default function Home() {
                   </div>
                 </article>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="avaliacoes" className={styles.section}>
+          <div className="container">
+            <h2 className={styles.sectionTitle}>O que dizem nossos clientes</h2>
+            <div className={styles.reviews}>
+              <Reviews variant="v1" />
             </div>
           </div>
         </section>

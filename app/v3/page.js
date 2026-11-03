@@ -10,6 +10,7 @@ import { whatsappLink } from "@/lib/v3";
 import { faqSchema } from "@/lib/seo";
 import FaqList from "@/components/seo/FaqList";
 import JsonLd from "@/components/seo/JsonLd";
+import Reviews from "@/components/reviews/Reviews";
 import styles from "./page.module.css";
 
 const numbers = [
@@ -128,11 +129,24 @@ export default function HomeV3() {
         </div>
       </section>
 
+      {/* ---------- Avaliações (Google) ---------- */}
+      <section id="avaliacoes" className={styles.reviews}>
+        <div className="v3-container">
+          <Reveal className={styles.head}>
+            <span className={styles.kicker}>// 04 · Avaliações</span>
+            <h2 className={styles.titleDark}>O que dizem nossos clientes</h2>
+          </Reveal>
+          <Reveal delay={100}>
+            <Reviews variant="v3" />
+          </Reveal>
+        </div>
+      </section>
+
       {/* ---------- Processo ---------- */}
       <section className={styles.process}>
         <div className="v3-container">
           <Reveal className={styles.head}>
-            <span className={styles.kicker}>// 04 · Como trabalhamos</span>
+            <span className={styles.kicker}>// 05 · Como trabalhamos</span>
             <h2 className={styles.title}>Do primeiro contato à aprovação</h2>
           </Reveal>
           <ol className={styles.steps}>
@@ -151,7 +165,7 @@ export default function HomeV3() {
       <section id="perguntas" className={styles.faqSection}>
         <div className={`v3-container ${styles.faqGrid}`}>
           <Reveal>
-            <span className={styles.kicker}>// 05 · Perguntas frequentes</span>
+            <span className={styles.kicker}>// 06 · Perguntas frequentes</span>
             <h2 className={styles.title}>Respostas diretas para as dúvidas mais comuns</h2>
             <p className={styles.lead}>
               AVCB, alvarás, Habite-se e regularização explicados de forma simples.

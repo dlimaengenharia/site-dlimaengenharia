@@ -5,7 +5,7 @@
   padding: 36px;
   border: 1px solid var(--line-strong);
   border-radius: var(--radius);
-  background: linear-gradient(160deg, rgba(31, 44, 75, 0.9), rgba(19, 28, 49, 0.95));
+  background: linear-gradient(160deg, rgba(31, 40, 57, 0.9), rgba(31, 40, 57, 0.95));
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
 }
 
@@ -74,7 +74,7 @@
 .form input:focus,
 .form textarea:focus {
   border-color: var(--orange);
-  box-shadow: 0 0 0 3px rgba(255, 138, 61, 0.2);
+  box-shadow: 0 0 0 3px rgba(252, 154, 82, 0.2);
 }
 
 .services {
@@ -111,7 +111,7 @@
 }
 
 .form .chip:hover {
-  border-color: rgba(255, 138, 61, 0.6);
+  border-color: rgba(252, 154, 82, 0.6);
 }
 
 .form .chip:focus-within,

@@ -64,8 +64,16 @@
 }
 
 .services .kicker,
-.about .kicker {
+.about .kicker,
+.reviews .kicker {
   color: var(--orange-2);
+}
+
+/* ---------- Avaliações (claro) ---------- */
+
+.reviews {
+  background: var(--light);
+  padding: 112px 0;
 }
 
 /* ---------- Diagnóstico (escuro) ---------- */
@@ -74,7 +82,7 @@
   position: relative;
   padding: 112px 0;
   background:
-    radial-gradient(ellipse 60% 50% at 0% 100%, rgba(255, 138, 61, 0.12), transparent 70%),
+    radial-gradient(ellipse 60% 50% at 0% 100%, rgba(252, 154, 82, 0.12), transparent 70%),
     var(--ink);
 }
 
@@ -205,7 +213,7 @@
   display: flex;
   gap: 16px;
   padding: 18px;
-  border: 1px solid #e3e7ef;
+  border: 1px solid #ebe3da;
   border-radius: 12px;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
@@ -290,7 +298,7 @@
   height: 10px;
   border-radius: 50%;
   background: var(--orange);
-  box-shadow: 0 0 0 5px rgba(255, 138, 61, 0.2);
+  box-shadow: 0 0 0 5px rgba(252, 154, 82, 0.2);
 }
 
 .stepNum {
@@ -347,7 +355,7 @@
   background:
     linear-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px) 0 0 / 28px 28px,
     linear-gradient(90deg, rgba(0, 0, 0, 0.06) 1px, transparent 1px) 0 0 / 28px 28px,
-    linear-gradient(120deg, #ff9a52, #ff6b1a);
+    linear-gradient(120deg, #fc9a52, #f08536);
   color: var(--ink);
 }
 

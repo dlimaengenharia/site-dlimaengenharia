@@ -1,0 +1,153 @@
+/* Cada versão do site define as mesmas variáveis (--rv-*). */
+
+.v1 {
+  --rv-on-section: var(--white);
+  --rv-card-bg: var(--white);
+  --rv-card-text: var(--navy);
+  --rv-card-muted: #5b6375;
+  --rv-card-border: transparent;
+  --rv-radius: 0;
+  --rv-star: var(--orange);
+  --rv-font: var(--font-body), sans-serif;
+  --rv-display: var(--font-display), sans-serif;
+}
+
+.v2 {
+  --rv-on-section: var(--v2-white);
+  --rv-card-bg: var(--v2-white);
+  --rv-card-text: var(--v2-text);
+  --rv-card-muted: var(--v2-muted);
+  --rv-card-border: transparent;
+  --rv-radius: var(--v2-radius);
+  --rv-star: var(--v2-orange);
+  --rv-font: var(--font-v2-body), sans-serif;
+  --rv-display: var(--font-display), sans-serif;
+}
+
+.v3 {
+  --rv-on-section: var(--navy);
+  --rv-card-bg: var(--white);
+  --rv-card-text: var(--light-text);
+  --rv-card-muted: #6b7386;
+  --rv-card-border: rgba(59, 75, 104, 0.12);
+  --rv-radius: var(--radius);
+  --rv-star: var(--orange);
+  --rv-font: var(--font-v3-body), sans-serif;
+  --rv-display: var(--font-v3-display), sans-serif;
+}
+
+.wrap {
+  font-family: var(--rv-font);
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 36px;
+  color: var(--rv-on-section);
+}
+
+.score {
+  font-family: var(--rv-display);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1;
+}
+
+.summaryInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.summaryText {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+}
+
+.stars {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.stars svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--rv-star);
+}
+
+.g {
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+
+/* Colunas em "alvenaria": os cartões têm alturas diferentes. */
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 3;
+  column-gap: 24px;
+}
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 24px;
+  background: var(--rv-card-bg);
+  color: var(--rv-card-text);
+  border: 1px solid var(--rv-card-border);
+  border-radius: var(--rv-radius);
+  break-inside: avoid;
+}
+
+.text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.65;
+  white-space: pre-line;
+}
+
+.source {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  font-size: 13px;
+  color: var(--rv-card-muted);
+}
+
+/* A v3 tem cabeçalhos alinhados à esquerda. */
+.v3 .summary {
+  justify-content: flex-start;
+}
+
+@media (max-width: 960px) {
+  .grid {
+    columns: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    columns: 1;
+  }
+
+  .summary {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .summaryInfo {
+    align-items: center;
+  }
+}

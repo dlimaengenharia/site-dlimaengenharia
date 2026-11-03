@@ -5,6 +5,7 @@ import { whatsappLink } from "@/lib/v2";
 import { faqSchema } from "@/lib/seo";
 import FaqList from "@/components/seo/FaqList";
 import JsonLd from "@/components/seo/JsonLd";
+import Reviews from "@/components/reviews/Reviews";
 import {
   serviceIcons,
   ShieldIcon,
@@ -192,6 +193,17 @@ export default function HomeV2() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* ---------- Avaliações (Google) ---------- */}
+      <section id="avaliacoes" className={styles.reviews}>
+        <div className="v2-container">
+          <div className={styles.sectionHead}>
+            <span className={styles.eyebrowLight}>Avaliações</span>
+            <h2 className={styles.titleLight}>O que dizem nossos clientes</h2>
+          </div>
+          <Reviews variant="v2" />
         </div>
       </section>
 

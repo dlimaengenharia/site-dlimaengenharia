@@ -67,12 +67,12 @@
 }
 
 .btnPrimary {
-  background: var(--v2-orange-strong);
+  background: var(--v2-orange);
   color: var(--v2-white);
 }
 
 .btnPrimary:hover {
-  background: var(--v2-orange-hover);
+  background: var(--v2-orange-dark);
   transform: translateY(-2px);
 }
 
@@ -239,7 +239,7 @@
   position: absolute;
   right: -24px;
   bottom: 40px;
-  background: var(--v2-orange-strong);
+  background: var(--v2-orange);
   color: var(--v2-white);
   padding: 20px 26px;
   border-radius: var(--v2-radius);
@@ -331,7 +331,7 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: var(--v2-orange-strong);
+  background: var(--v2-orange);
   color: var(--v2-white);
   border: 4px solid var(--v2-white);
 }
@@ -446,6 +446,21 @@
   font-size: 15px;
   line-height: 1.55;
   color: var(--v2-muted);
+}
+
+/* ---------- Avaliações (Google) ---------- */
+
+.reviews {
+  background: var(--v2-navy);
+  padding: 96px 0;
+}
+
+.titleLight {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.15;
+  color: var(--v2-white);
 }
 
 /* ---------- Perguntas frequentes ---------- */

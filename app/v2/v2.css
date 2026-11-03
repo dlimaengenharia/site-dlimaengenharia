@@ -9,13 +9,14 @@ body:has([data-v2]) {
 }
 
 [data-v2] {
-  --v2-navy: #2f3b56;
-  --v2-navy-2: #3d4b6b;
+  --v2-navy: #2e3a52;
+  --v2-navy-2: #3b4b68;
   --v2-navy-dark: #222b40;
-  --v2-orange: #f99a52;
+  --v2-orange: #fc9a52;
   --v2-orange-strong: #d9661f;
   --v2-orange-hover: #c25717;
-  --v2-cream: #faf3ee;
+  --v2-orange-dark: #f08536;
+  --v2-cream: #fbf5ef;
   --v2-white: #ffffff;
   --v2-text: #3a4255;
   --v2-muted: #6b7386;

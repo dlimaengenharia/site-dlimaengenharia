@@ -43,8 +43,8 @@
 }
 
 .switcher a.active {
-  background: #f99a52;
-  color: #1a2233;
+  background: #fc9a52;
+  color: #232d40;
 }
 
 @media print {

@@ -1,5 +1,5 @@
 .footer {
-  background: #090f1c;
+  background: #171e2d;
   border-top: 1px solid var(--line);
   font-size: 15px;
   color: var(--text-dim);
@@ -42,7 +42,7 @@
 .social a:hover {
   border-color: var(--orange);
   color: var(--orange);
-  background: rgba(255, 138, 61, 0.08);
+  background: rgba(252, 154, 82, 0.08);
 }
 
 .social svg {

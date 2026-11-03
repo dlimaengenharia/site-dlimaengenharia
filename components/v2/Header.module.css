@@ -93,7 +93,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--v2-orange-strong);
+  background: var(--v2-orange);
   color: var(--v2-white);
   font-weight: 600;
   font-size: 15px;
@@ -103,7 +103,7 @@
 }
 
 .cta:hover {
-  background: var(--v2-orange-hover);
+  background: var(--v2-orange-dark);
 }
 
 .cta svg {

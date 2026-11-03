@@ -4,7 +4,7 @@
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(ellipse 80% 60% at 80% 30%, rgba(61, 75, 107, 0.55), transparent 70%),
+    radial-gradient(ellipse 80% 60% at 80% 30%, rgba(59, 75, 104, 0.55), transparent 70%),
     var(--ink);
 }
 
@@ -29,8 +29,8 @@
 /* Grade laranja revelada pela "lanterna" do cursor */
 .spot {
   background-image:
-    linear-gradient(rgba(255, 138, 61, 0.35) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 138, 61, 0.35) 1px, transparent 1px);
+    linear-gradient(rgba(252, 154, 82, 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(252, 154, 82, 0.35) 1px, transparent 1px);
   background-size: 24px 24px;
   mask-image: radial-gradient(220px circle at var(--mx) var(--my), #000, transparent 70%);
   -webkit-mask-image: radial-gradient(220px circle at var(--mx) var(--my), #000, transparent 70%);
@@ -74,10 +74,10 @@
 
 @keyframes pulse {
   70% {
-    box-shadow: 0 0 0 10px rgba(255, 138, 61, 0);
+    box-shadow: 0 0 0 10px rgba(252, 154, 82, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(255, 138, 61, 0);
+    box-shadow: 0 0 0 0 rgba(252, 154, 82, 0);
   }
 }
 
@@ -234,7 +234,7 @@
   stroke-dasharray: 900;
   stroke-dashoffset: 900;
   animation: draw 1.6s cubic-bezier(0.6, 0, 0.2, 1) forwards;
-  filter: drop-shadow(0 0 6px rgba(255, 138, 61, 0.5));
+  filter: drop-shadow(0 0 6px rgba(252, 154, 82, 0.5));
 }
 
 @keyframes draw {

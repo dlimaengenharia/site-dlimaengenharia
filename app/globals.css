@@ -1,11 +1,11 @@
 :root {
-  --navy: #3d4b6b;
-  --navy-light: #4a5878;
-  --orange: #f99a52;
-  --orange-dark: #ee8536;
-  --cream: #faf3ee;
+  --navy: #3b4b68;
+  --navy-light: #4c5d7d;
+  --orange: #fc9a52;
+  --orange-dark: #f08536;
+  --cream: #fbf5ef;
   --white: #ffffff;
-  --text: #3d4b6b;
+  --text: #3b4b68;
 
   --container: 1100px;
 }

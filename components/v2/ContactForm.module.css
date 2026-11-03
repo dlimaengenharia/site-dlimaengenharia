@@ -37,7 +37,7 @@
   font-weight: 400;
   font-size: 15px;
   color: var(--v2-text);
-  background: #fbfaf8;
+  background: #fdfaf6;
   border: 1px solid var(--v2-line);
   border-radius: 8px;
   padding: 12px 14px;
@@ -66,7 +66,7 @@
   font-weight: 600;
   font-size: 16px;
   color: var(--v2-white);
-  background: var(--v2-orange-strong);
+  background: var(--v2-orange);
   border: 0;
   border-radius: 999px;
   padding: 15px 28px;
@@ -75,7 +75,7 @@
 }
 
 .form button:hover {
-  background: var(--v2-orange-hover);
+  background: var(--v2-orange-dark);
 }
 
 .form button svg {

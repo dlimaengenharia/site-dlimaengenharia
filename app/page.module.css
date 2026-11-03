@@ -64,7 +64,7 @@
   padding: 80px 24px;
   text-align: center;
   background-color: var(--navy-light);
-  background-image: linear-gradient(rgba(61, 75, 107, 0.78), rgba(61, 75, 107, 0.78)),
+  background-image: linear-gradient(rgba(59, 75, 104, 0.78), rgba(59, 75, 104, 0.78)),
     url(/images/hero.jpg);
   background-size: cover;
   background-position: center;
@@ -139,7 +139,7 @@
   padding: 40px;
 }
 
-.aboutLogo svg {
+.aboutLogo img {
   width: 100%;
 }
 
@@ -217,6 +217,10 @@
 
 /* ---------- Perguntas frequentes ---------- */
 
+.reviews {
+  margin-top: 28px;
+}
+
 .faq {
   padding: 0 34px;
   margin-top: 20px;
@@ -271,7 +275,7 @@
     padding: 60px 40px;
   }
 
-  .aboutLogo svg {
+  .aboutLogo img {
     max-width: 320px;
   }
 

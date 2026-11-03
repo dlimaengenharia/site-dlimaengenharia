@@ -79,26 +79,30 @@ export default function Hero() {
             <circle cx="210" cy="210" r="196" className={styles.ring} />
             <circle cx="210" cy="210" r="150" className={styles.ringDash} />
 
-            {/* Prédios inspirados no logo */}
+            {/* Símbolo do logo oficial (prédios + arco em "D") */}
             <g className={styles.build}>
-              <path d="M70 330 H350" style={{ animationDelay: "0.1s" }} />
-              <path d="M130 330 V190 H162 V330" style={{ animationDelay: "0.3s" }} />
-              <path d="M145 330 V215 H162" style={{ animationDelay: "0.45s" }} />
-              <path d="M162 330 V80 H218 V330" style={{ animationDelay: "0.6s" }} />
-              <path d="M202 330 V140 H252 V330" style={{ animationDelay: "0.8s" }} />
-              <path d="M218 330 V170 H252" style={{ animationDelay: "0.95s" }} />
-              <path d="M162 330 C 220 330, 266 300, 272 220" className={styles.arc} style={{ animationDelay: "1.1s" }} />
+              <path d="M62 330 H175" style={{ animationDelay: "0.1s" }} />
+              <path d="M175 140 H148.5 V330" style={{ animationDelay: "0.3s" }} />
+              <path d="M148.5 175 H195.5 V330" style={{ animationDelay: "0.45s" }} />
+              <path d="M175 330 V73 H242 V330 H226" style={{ animationDelay: "0.6s" }} />
+              <path d="M242 140 H272 V330 H357" style={{ animationDelay: "0.8s" }} />
+              <path d="M226 330 V140 H242" style={{ animationDelay: "0.95s" }} />
+              <path
+                d="M242 172.5 C 262 195, 272 222.5, 269.5 250 C 267 295, 224.5 327.5, 175.5 329"
+                className={styles.arc}
+                style={{ animationDelay: "1.1s" }}
+              />
             </g>
 
             {/* Cotas */}
             <g className={styles.dims}>
-              <path d="M162 64 H218 M162 58 V70 M218 58 V70" />
-              <path d="M276 140 V330 M270 140 H282 M270 330 H282" />
-              <path d="M110 190 V330 M104 190 H116 M104 330 H116" />
+              <path d="M175 58 H242 M175 52 V64 M242 52 V64" />
+              <path d="M290 140 V330 M284 140 H296 M284 330 H296" />
+              <path d="M128 140 V330 M122 140 H134 M122 330 H134" />
             </g>
-            <text x="190" y="54" className={styles.label} textAnchor="middle">12.40</text>
-            <text x="290" y="240" className={styles.label}>18.00</text>
-            <text x="98" y="265" className={styles.label} textAnchor="end">9.60</text>
+            <text x="208" y="48" className={styles.label} textAnchor="middle">12.40</text>
+            <text x="304" y="240" className={styles.label}>18.00</text>
+            <text x="118" y="240" className={styles.label} textAnchor="end">9.60</text>
           </svg>
 
           <div className={`${styles.chip} ${styles.chip1}`}>
