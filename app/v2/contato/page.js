@@ -11,7 +11,7 @@ export const metadata = {
   alternates: { canonical: "/contato" },
 };
 
-const mapQuery = encodeURIComponent(`${contact.address[0]}, ${contact.address[2]}`);
+const mapQuery = encodeURIComponent(contact.mapQuery);
 
 export default function ContatoV2() {
   const channels = [
