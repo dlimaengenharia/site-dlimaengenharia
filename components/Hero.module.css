@@ -85,10 +85,12 @@
   margin-top: 28px;
   font-family: var(--font-v3-display), sans-serif;
   font-weight: 700;
-  font-size: clamp(44px, 6.4vw, 84px);
+  font-size: clamp(40px, 6.4vw, 84px);
   line-height: 0.98;
   letter-spacing: -0.5px;
   text-transform: uppercase;
+  /* Se a fonte condensada atrasar ou falhar, a palavra quebra em vez de esticar o layout. */
+  overflow-wrap: anywhere;
   color: var(--white);
 }
 
@@ -338,7 +340,7 @@
 
 @media (max-width: 960px) {
   .inner {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     min-height: 0;
     padding-top: 110px;
     padding-bottom: 64px;
