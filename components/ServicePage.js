@@ -1,22 +1,21 @@
 import Link from "next/link";
 import { WhatsAppIcon } from "@/components/Icons";
-import { serviceIcons, CheckIcon, ArrowIcon } from "@/components/v2/icons";
+import { serviceIcons, CheckIcon, ArrowIcon } from "@/components/SiteIcons";
 import FaqList from "@/components/seo/FaqList";
 import JsonLd from "@/components/seo/JsonLd";
 import { servicePages } from "@/lib/servicePages";
 import { faqSchema, servicePageSchema } from "@/lib/seo";
-import { whatsappLink } from "@/lib/v2";
+import { whatsappLink } from "@/lib/site";
 import styles from "./ServicePage.module.css";
 
-// Página individual de serviço, compartilhada pelas 3 versões do site.
-// variant: "v1" | "v2" | "v3" (visual)  ·  basePath: "" | "/v2" | "/v3" (links internos)
-export default function ServicePage({ page, variant = "v1", basePath = "" }) {
+// Página individual de serviço (/servicos/[slug]).
+export default function ServicePage({ page }) {
   const Icon = serviceIcons[page.slug];
   const others = servicePages.filter((p) => p.slug !== page.slug);
   const quote = whatsappLink(`Olá! Vim pelo site e gostaria de um orçamento para ${page.name}.`);
 
   return (
-    <main className={`${styles.page} ${styles[variant]}`}>
+    <main className={`${styles.page} ${styles.v3}`}>
       <JsonLd data={servicePageSchema(page)} />
       <JsonLd data={faqSchema(page.faq)} />
 
@@ -24,9 +23,9 @@ export default function ServicePage({ page, variant = "v1", basePath = "" }) {
       <section className={styles.hero}>
         <div className={styles.container}>
           <nav className={styles.breadcrumb} aria-label="Você está em">
-            <Link href={basePath || "/"}>Início</Link>
+            <Link href="/">Início</Link>
             <span aria-hidden="true">/</span>
-            <Link href={`${basePath || "/"}#servicos`}>Serviços</Link>
+            <Link href={"/#servicos"}>Serviços</Link>
             <span aria-hidden="true">/</span>
             <span aria-current="page">{page.name}</span>
           </nav>
@@ -48,7 +47,7 @@ export default function ServicePage({ page, variant = "v1", basePath = "" }) {
                   <WhatsAppIcon />
                   Solicitar orçamento
                 </a>
-                <Link href={`${basePath}/contato`} className={styles.secondary}>
+                <Link href={"/contato"} className={styles.secondary}>
                   Outros contatos
                 </Link>
               </div>
@@ -111,7 +110,7 @@ export default function ServicePage({ page, variant = "v1", basePath = "" }) {
       <section className={`${styles.section} ${styles.faq}`}>
         <div className={`${styles.container} ${styles.faqGrid}`}>
           <h2 className={styles.h2}>Perguntas frequentes sobre {page.name.toLowerCase()}</h2>
-          <FaqList variant={variant} items={page.faq} />
+          <FaqList items={page.faq} />
         </div>
       </section>
 
@@ -142,7 +141,7 @@ export default function ServicePage({ page, variant = "v1", basePath = "" }) {
             {others.map((other) => {
               const OtherIcon = serviceIcons[other.slug];
               return (
-                <Link key={other.slug} href={`${basePath}/servicos/${other.slug}`} className={styles.other}>
+                <Link key={other.slug} href={`/servicos/${other.slug}`} className={styles.other}>
                   <span className={styles.otherIcon}>
                     <OtherIcon />
                   </span>

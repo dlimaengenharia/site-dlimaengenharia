@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import { WhatsAppIcon } from "@/components/Icons";
-import { serviceIcons, CheckIcon, ArrowIcon } from "@/components/v2/icons";
+import { serviceIcons, CheckIcon, ArrowIcon } from "@/components/SiteIcons";
 import { services } from "@/lib/services";
-import { diagnosisNeeds, propertyTypes, serviceDetails, whatsappLink } from "@/lib/v3";
+import { whatsappLink } from "@/lib/site";
+import { diagnosisNeeds, propertyTypes, serviceDetails } from "@/lib/home";
 import styles from "./Diagnostico.module.css";
 
 const stepLabels = ["Imóvel", "Necessidade", "Resultado"];

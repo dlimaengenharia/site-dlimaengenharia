@@ -1,6 +1,7 @@
-import { Oswald, Dosis } from "next/font/google";
+import { Barlow, Barlow_Condensed, JetBrains_Mono } from "next/font/google";
 import Header from "@/components/Header";
-import VersionSwitcher from "@/components/VersionSwitcher";
+import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 import JsonLd from "@/components/seo/JsonLd";
 import {
   siteUrl,
@@ -12,16 +13,22 @@ import {
 } from "@/lib/seo";
 import "./globals.css";
 
-const oswald = Oswald({
+const barlow = Barlow({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-display",
+  weight: ["400", "500", "600"],
+  variable: "--font-v3-body",
 });
 
-const dosis = Dosis({
+const barlowCondensed = Barlow_Condensed({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-body",
+  weight: ["500", "600", "700"],
+  variable: "--font-v3-display",
+});
+
+const mono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-v3-mono",
 });
 
 export const metadata = {
@@ -53,12 +60,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR" className={`${oswald.variable} ${dosis.variable}`}>
+    <html lang="pt-BR">
       <body>
         <JsonLd data={businessSchema()} />
-        <Header />
-        {children}
-        <VersionSwitcher />
+        <div
+          data-v3
+          className={`${barlow.variable} ${barlowCondensed.variable} ${mono.variable}`}
+        >
+          <Header />
+          {children}
+          <Footer />
+          <WhatsAppFloat />
+        </div>
       </body>
     </html>
   );

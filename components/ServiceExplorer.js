@@ -3,8 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import { services } from "@/lib/services";
-import { serviceDetails, whatsappLink } from "@/lib/v3";
-import { serviceIcons, CheckIcon, ArrowIcon } from "@/components/v2/icons";
+import { whatsappLink } from "@/lib/site";
+import { serviceDetails } from "@/lib/home";
+import { serviceIcons, CheckIcon, ArrowIcon } from "@/components/SiteIcons";
 import styles from "./ServiceExplorer.module.css";
 
 export default function ServiceExplorer() {
@@ -86,7 +87,7 @@ export default function ServiceExplorer() {
           </ul>
 
           <div className={styles.links}>
-            <Link href={`/v3/servicos/${service.slug}`} className={styles.more}>
+            <Link href={`/servicos/${service.slug}`} className={styles.more}>
               Ver detalhes do serviço
             </Link>
             <a

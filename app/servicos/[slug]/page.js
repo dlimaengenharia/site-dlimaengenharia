@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import ServicePage from "@/components/ServicePage";
-import Footer from "@/components/Footer";
+
 import { servicePages, getServicePage } from "@/lib/servicePages";
 
 export function generateStaticParams() {
@@ -22,10 +22,5 @@ export default async function Page({ params }) {
   const { slug } = await params;
   const page = getServicePage(slug);
   if (!page) notFound();
-  return (
-    <>
-      <ServicePage page={page} variant="v1" basePath="" />
-      <Footer />
-    </>
-  );
+  return <ServicePage page={page} />;
 }

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { WhatsAppIcon } from "@/components/Icons";
 import { services } from "@/lib/services";
-import { whatsappLink } from "@/lib/v3";
+import { whatsappLink } from "@/lib/site";
 import styles from "./ContactForm.module.css";
 
 // Sem backend: monta a mensagem e abre a conversa no WhatsApp.

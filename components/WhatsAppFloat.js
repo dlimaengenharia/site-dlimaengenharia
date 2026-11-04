@@ -1,5 +1,5 @@
 import { WhatsAppIcon } from "@/components/Icons";
-import { whatsappLink } from "@/lib/v2";
+import { whatsappLink } from "@/lib/site";
 import styles from "./WhatsAppFloat.module.css";
 
 export default function WhatsAppFloat() {

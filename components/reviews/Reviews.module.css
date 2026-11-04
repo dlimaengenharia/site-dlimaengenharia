@@ -1,28 +1,4 @@
-/* Cada versão do site define as mesmas variáveis (--rv-*). */
-
-.v1 {
-  --rv-on-section: var(--white);
-  --rv-card-bg: var(--white);
-  --rv-card-text: var(--navy);
-  --rv-card-muted: #5b6375;
-  --rv-card-border: transparent;
-  --rv-radius: 0;
-  --rv-star: var(--orange);
-  --rv-font: var(--font-body), sans-serif;
-  --rv-display: var(--font-display), sans-serif;
-}
-
-.v2 {
-  --rv-on-section: var(--v2-white);
-  --rv-card-bg: var(--v2-white);
-  --rv-card-text: var(--v2-text);
-  --rv-card-muted: var(--v2-muted);
-  --rv-card-border: transparent;
-  --rv-radius: var(--v2-radius);
-  --rv-star: var(--v2-orange);
-  --rv-font: var(--font-v2-body), sans-serif;
-  --rv-display: var(--font-display), sans-serif;
-}
+/* Variáveis do tema (--rv-*). */
 
 .v3 {
   --rv-on-section: var(--navy);

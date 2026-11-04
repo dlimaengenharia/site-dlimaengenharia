@@ -1,7 +1,6 @@
 import { siteUrl } from "@/lib/seo";
 import { servicePages } from "@/lib/servicePages";
 
-// As versões de comparação (/v2 e /v3) ficam fora do sitemap.
 export default function sitemap() {
   const lastModified = new Date();
   return [

@@ -3,8 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { WhatsAppIcon } from "@/components/Icons";
-import { ArrowIcon } from "@/components/v2/icons";
-import { whatsappLink } from "@/lib/v3";
+import { ArrowIcon } from "@/components/SiteIcons";
+import { whatsappLink } from "@/lib/site";
 import styles from "./Hero.module.css";
 
 const words = ["AVCB e CLCB", "Alvarás", "Habite-se", "Regularização", "Acessibilidade", "Licenças"];
@@ -67,7 +67,7 @@ export default function Hero() {
               <WhatsAppIcon />
               Solicitar orçamento
             </a>
-            <Link href="/v3#diagnostico" className={styles.secondary}>
+            <Link href="/#diagnostico" className={styles.secondary}>
               Fazer diagnóstico rápido
               <ArrowIcon />
             </Link>

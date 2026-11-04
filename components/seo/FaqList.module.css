@@ -50,63 +50,7 @@
   line-height: 1.65;
 }
 
-/* ---------- V1: cartões brancos sobre o azul ---------- */
-
-.v1 .item {
-  background: var(--white);
-  padding: 18px 22px;
-}
-
-.v1 summary {
-  font-weight: 600;
-  font-size: 20px;
-  color: var(--navy);
-}
-
-.v1 .icon {
-  color: var(--white);
-  background: var(--orange);
-}
-
-.v1 .item p {
-  margin-top: 12px;
-  font-size: 17px;
-  color: #333a4a;
-}
-
-/* ---------- V2: cartões claros com sombra ---------- */
-
-.v2 .item {
-  background: var(--v2-white);
-  border-radius: var(--v2-radius);
-  box-shadow: var(--v2-shadow);
-  padding: 20px 24px;
-  border-left: 3px solid transparent;
-  transition: border-color 0.2s;
-}
-
-.v2 .item[open] {
-  border-left-color: var(--v2-orange-strong);
-}
-
-.v2 summary {
-  font-weight: 700;
-  font-size: 17px;
-  color: var(--v2-navy);
-}
-
-.v2 .icon {
-  color: var(--v2-orange-strong);
-  background: var(--v2-cream);
-}
-
-.v2 .item p {
-  margin-top: 12px;
-  font-size: 15.5px;
-  color: var(--v2-muted);
-}
-
-/* ---------- V3: painéis escuros ---------- */
+/* ---------- Painéis escuros ---------- */
 
 .v3 {
   gap: 0;
@@ -143,12 +87,7 @@
 }
 
 @media (max-width: 640px) {
-  .v1 summary,
   .v3 summary {
     font-size: 18px;
-  }
-
-  .v2 summary {
-    font-size: 16px;
   }
 }

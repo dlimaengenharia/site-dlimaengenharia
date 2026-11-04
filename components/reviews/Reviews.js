@@ -30,8 +30,7 @@ function GoogleG() {
   );
 }
 
-// variant: "v1" | "v2" | "v3" — define cores e formas (ver Reviews.module.css).
-export default function Reviews({ variant = "v1" }) {
+export default function Reviews({ variant = "v3" }) {
   const { rating, total, items } = googleReviews;
   const ratingText = rating.toFixed(1).replace(".", ",");
 

@@ -11,21 +11,19 @@
 | Título, descrição e palavras-chave | `lib/seo.js`, `app/layout.js` | O que aparece no Google |
 | Endereço canônico de cada página | metadados das páginas | Evita conteúdo duplicado |
 | Dados estruturados da empresa (`ProfessionalService` / `LocalBusiness`) | `lib/seo.js` | Endereço, telefone, serviços, Instagram e área atendida, legíveis por máquina |
-| Perguntas frequentes visíveis e dados `FAQPage` | `lib/faq.js`, nas 3 versões | Respostas diretas para Google e IAs (AEO) |
+| Perguntas frequentes visíveis e dados `FAQPage` | `lib/faq.js` | Respostas diretas para Google e IAs (AEO) |
 | `sitemap.xml` | `app/sitemap.js` | Lista as páginas para o Google |
 | `robots.txt` liberando buscadores e robôs de IA | `app/robots.js` | Permite que o site seja lido e citado (GEO) |
 | `llms.txt` | `public/llms.txt` | Resumo da empresa em texto simples para IAs |
 | Imagem de compartilhamento | `app/opengraph-image.js` | Prévia bonita no WhatsApp, LinkedIn e Facebook |
 | Ícone do site (favicon) | `app/icon.svg` | Aba do navegador e resultados do Google |
-| `/v2` e `/v3` fora do Google (`noindex`) | `app/v2/layout.js`, `app/v3/layout.js` | As versões de comparação não competem com o site oficial |
 
 > As perguntas e respostas ficam em `lib/faq.js`. Edite só esse arquivo: o texto visível e os dados estruturados se atualizam juntos.
 
 ## Antes de publicar
 
 1. **Confirmar o domínio.** O padrão é `https://www.dlimaengenharia.com.br`. Se for outro, defina `NEXT_PUBLIC_SITE_URL` na hospedagem e atualize os links em `public/llms.txt`.
-2. **Escolher a versão final.** Leve a versão escolhida para a raiz (`/` e `/contato`) e remova `/v2`, `/v3` e o seletor de versões (`components/VersionSwitcher.js` e a linha correspondente em `app/layout.js`).
-3. **Revisar as respostas das perguntas frequentes** com a Débora, principalmente prazos, área de atendimento e Anistia 2025.
+2. **Revisar as respostas das perguntas frequentes** com a Débora, principalmente prazos, área de atendimento e Anistia 2025.
 
 ## Depois de publicar (fora do código)
 
@@ -40,7 +38,7 @@ Estes passos dão o maior retorno para uma empresa local:
 
 ## Páginas de serviço
 
-Cada serviço tem uma página própria em `/servicos/<serviço>`, com título e descrição para o Google, explicação, público, o que está incluso, etapas, perguntas frequentes, dados estruturados (`Service`, `BreadcrumbList` e `FAQPage`) e links para os outros serviços. O conteúdo de todas fica em `lib/servicePages.js`, e as 3 versões usam o mesmo texto.
+Cada serviço tem uma página própria em `/servicos/<serviço>`, com título e descrição para o Google, explicação, público, o que está incluso, etapas, perguntas frequentes, dados estruturados (`Service`, `BreadcrumbList` e `FAQPage`) e links para os outros serviços. O conteúdo de todas fica em `lib/servicePages.js`.
 
 > Revise com a Débora principalmente: Anistia 2025, usucapião, CETESB (licenciamento) e os itens de Licenciamento Ambiental, que no layout original repetiam os de Alvarás.
 
