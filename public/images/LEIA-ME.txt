@@ -1,15 +1,10 @@
-Coloque aqui as fotos do site (formato .jpg). Enquanto não existirem,
-o site mostra um fundo azul/cinza no lugar.
+Fotos do site, em formato .webp (menores e mais rápidas que .jpg).
 
-  hero.jpg                                  -> fundo do topo da Home (prancheta/planta)
-  contato.jpg                               -> foto da página Contato (capacete/ferramentas)
-  servicos/combate-a-incendio.jpg
-  servicos/seguranca-do-trabalho.jpg
-  servicos/alvaras.jpg
-  servicos/regularizacao-de-imoveis.jpg
-  servicos/acessibilidade.jpg
-  servicos/licenciamento-ambiental.jpg
+  servicos/<serviço>.webp  -> foto de cada serviço (largura de ~900 px)
+  sobre.webp               -> foto da seção "Sobre" (largura de ~1000 px)
+  hero.webp                -> imagem de apoio dos dados do Google (~1200 px)
 
-As fotos atuais são de banco de imagens gratuito (Unsplash, licença livre para uso
-comercial, sem necessidade de crédito). Substitua por fotos reais da D'Lima quando
-houver, mantendo os mesmos nomes de arquivo. sobre.jpg -> idealmente uma foto da Débora.
+Para trocar uma foto, mantenha o mesmo nome de arquivo. Se a foto vier em .jpg,
+converta para .webp (qualidade ~75) e redimensione para a largura indicada acima
+antes de colocar aqui; fotos de 1 MB deixam o site lento no celular.
+sobre.webp -> idealmente uma foto da Débora.

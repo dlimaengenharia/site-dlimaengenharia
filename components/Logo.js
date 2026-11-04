@@ -8,7 +8,7 @@ const SOURCES = {
   dark: "/images/logo-escuro-sobre-claro.png",
 };
 
-export default function Logo({ variant = "light", className = "" }) {
+export default function Logo({ variant = "light", className = "", priority = false }) {
   return (
     <Image
       className={`${styles.logo} ${className}`}
@@ -17,6 +17,7 @@ export default function Logo({ variant = "light", className = "" }) {
       width={1064}
       height={527}
       sizes="(max-width: 700px) 60vw, 330px"
+      priority={priority}
     />
   );
 }

@@ -64,7 +64,7 @@ export default function ServiceExplorer() {
       >
         <div
           className={styles.media}
-          style={{ backgroundImage: `url(/images/servicos/${service.slug}.jpg)` }}
+          style={{ backgroundImage: `url(/images/servicos/${service.slug}.webp)` }}
         >
           <span className={styles.mediaIcon}>
             <Icon />

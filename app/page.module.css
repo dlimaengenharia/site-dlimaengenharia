@@ -149,7 +149,7 @@
   aspect-ratio: 4 / 5;
   border-radius: var(--radius);
   background-color: var(--navy);
-  background-image: url(/images/sobre.jpg);
+  background-image: url(/images/sobre.webp);
   background-size: cover;
   background-position: center;
 }

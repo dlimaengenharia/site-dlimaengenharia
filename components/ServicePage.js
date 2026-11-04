@@ -54,7 +54,7 @@ export default function ServicePage({ page }) {
             </div>
             <div
               className={styles.heroImage}
-              style={{ backgroundImage: `url(/images/servicos/${page.slug}.jpg)` }}
+              style={{ backgroundImage: `url(/images/servicos/${page.slug}.webp)` }}
               role="img"
               aria-label={page.name}
             />

@@ -28,7 +28,7 @@ export default function Header() {
     <header className={`${styles.header} ${scrolled || open ? styles.solid : ""}`}>
       <div className={`v3-container ${styles.inner}`}>
         <Link href="/" aria-label="Página inicial" onClick={() => setOpen(false)}>
-          <Logo className={styles.logo} />
+          <Logo className={styles.logo} priority />
         </Link>
 
         <button
