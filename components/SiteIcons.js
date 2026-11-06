@@ -7,6 +7,8 @@ import {
   House,
   Accessibility,
   Leaf,
+  ClipboardCheck,
+  KeyRound,
   ShieldCheck,
   UserRound,
   Zap,
@@ -28,6 +30,8 @@ export const DocumentIcon = icon(FileCheck);
 export const HouseIcon = icon(House);
 export const AccessIcon = icon(Accessibility);
 export const LeafIcon = icon(Leaf);
+export const SanitaryIcon = icon(ClipboardCheck);
+export const KeyIcon = icon(KeyRound);
 export const ShieldIcon = icon(ShieldCheck);
 export const UserIcon = icon(UserRound);
 export const BoltIcon = icon(Zap);
@@ -44,4 +48,6 @@ export const serviceIcons = {
   "regularizacao-de-imoveis": HouseIcon,
   acessibilidade: AccessIcon,
   "licenciamento-ambiental": LeafIcon,
+  "vigilancia-sanitaria": SanitaryIcon,
+  "certificado-digital": KeyIcon,
 };

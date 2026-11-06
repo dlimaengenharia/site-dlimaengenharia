@@ -23,7 +23,7 @@
 ## Antes de publicar
 
 1. **Confirmar o domínio.** O padrão é `https://www.dlimaengenharia.com.br`. Se for outro, defina `NEXT_PUBLIC_SITE_URL` na hospedagem e atualize os links em `public/llms.txt`.
-2. **Revisar as respostas das perguntas frequentes** com a Débora, principalmente prazos, área de atendimento e Anistia 2025.
+2. **Revisar as respostas das perguntas frequentes** com a Débora, principalmente prazos, área de atendimento e Anistia.
 
 ## Depois de publicar (fora do código)
 
@@ -40,9 +40,9 @@ Estes passos dão o maior retorno para uma empresa local:
 
 Cada serviço tem uma página própria em `/servicos/<serviço>`, com título e descrição para o Google, explicação, público, o que está incluso, etapas, perguntas frequentes, dados estruturados (`Service`, `BreadcrumbList` e `FAQPage`) e links para os outros serviços. O conteúdo de todas fica em `lib/servicePages.js`.
 
-> Revise com a Débora principalmente: Anistia 2025, usucapião, CETESB (licenciamento) e os itens de Licenciamento Ambiental, que no layout original repetiam os de Alvarás.
+> Revise com a Débora principalmente: Anistia, usucapião, CETESB (licenciamento) e os itens de Licenciamento Ambiental, que no layout original repetiam os de Alvarás.
 
 ## Próximos passos no site
 
-- **Conteúdo de autoridade**: artigos curtos que respondem a dúvidas reais, como "Quanto tempo demora o AVCB em SP?" ou "Como regularizar um imóvel com a Anistia 2025?".
+- **Conteúdo de autoridade**: artigos curtos que respondem a dúvidas reais, como "Quanto tempo demora o AVCB em SP?" ou "Como regularizar um imóvel com a Anistia?".
 - **Fotos reais e registro profissional (CREA)** visíveis no site: reforçam credibilidade para o Google e para as IAs.

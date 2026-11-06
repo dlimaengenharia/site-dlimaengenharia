@@ -14,7 +14,7 @@ import Reviews from "@/components/reviews/Reviews";
 import styles from "./page.module.css";
 
 const numbers = [
-  { value: "06", label: "Áreas de atuação" },
+  { value: "08", label: "Áreas de atuação" },
   { value: "03", label: "Tipos de imóvel: residencial, comercial e industrial" },
   { value: "1:1", label: "Atendimento personalizado do início ao fim" },
 ];
@@ -47,7 +47,7 @@ export default function HomeV3() {
               Soluções completas em engenharia e regularização
             </h2>
             <p className={styles.leadDark}>
-              Seis frentes de atuação para deixar o seu imóvel ou empresa em dia com
+              Oito frentes de atuação para deixar o seu imóvel ou empresa em dia com
               as normas. Selecione um serviço para ver os detalhes.
             </p>
           </Reveal>
@@ -168,7 +168,7 @@ export default function HomeV3() {
             <span className={styles.kicker}>// 06 · Perguntas frequentes</span>
             <h2 className={styles.title}>Respostas diretas para as dúvidas mais comuns</h2>
             <p className={styles.lead}>
-              AVCB, alvarás, Habite-se e regularização explicados de forma simples.
+              AVCB, licenças, Habite-se e regularização explicados de forma simples.
             </p>
           </Reveal>
           <Reveal delay={100}>

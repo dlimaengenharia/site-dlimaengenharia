@@ -357,6 +357,15 @@
     font-size: 16.5px;
   }
 
+  /* As palavras longas ficam sempre na linha de baixo, para o texto não pular a cada troca. */
+  .rotator {
+    row-gap: 4px;
+  }
+
+  .rotWindow {
+    width: 100%;
+  }
+
   .actions a {
     width: 100%;
     justify-content: center;

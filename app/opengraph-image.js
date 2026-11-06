@@ -1,11 +1,11 @@
 import { ImageResponse } from "next/og";
 
 // Imagem exibida quando o link do site é compartilhado (WhatsApp, LinkedIn, Facebook...).
-export const alt = "D'Lima Engenharia: AVCB, alvarás e regularização de imóveis em São Paulo";
+export const alt = "D'Lima Engenharia: AVCB, licença de funcionamento e licença CETESB em São Paulo";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-const services = ["AVCB e CLCB", "Alvarás", "Regularização", "Habite-se", "Acessibilidade", "Licenciamento"];
+const services = ["AVCB e CLCB", "Licença de funcionamento", "CETESB", "Vigilância Sanitária", "Certificado digital", "Regularização"];
 
 export default function OpengraphImage() {
   return new ImageResponse(

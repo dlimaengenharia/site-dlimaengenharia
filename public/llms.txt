@@ -1,6 +1,6 @@
 # D'Lima Engenharia
 
-> Empresa de engenharia e regularização em São Paulo/SP, responsável: Débora Lima. Cuida de AVCB e CLCB (Corpo de Bombeiros), projeto de combate a incêndio, alvarás de funcionamento e sanitário, regularização de imóveis (incluindo usucapião, Anistia 2025 e Habite-se), acessibilidade, segurança do trabalho e licenciamento ambiental, para imóveis residenciais, comerciais e industriais.
+> Empresa de engenharia e regularização em São Paulo/SP, responsável: Débora Lima. Foco em AVCB e CLCB (Corpo de Bombeiros) e projeto de bombeiro, licença de funcionamento (ALF, Auto de Licença de Funcionamento), Licença de Operação na CETESB e licenciamento na Secretaria do Verde e Meio Ambiente, licença sanitária (Vigilância Sanitária) e certificado digital e-CPF e e-CNPJ. Também cuida de regularização de imóveis (incluindo projeto na prefeitura, usucapião, Anistia e Habite-se), acessibilidade e AVS (Auto de Verificação de Segurança) e segurança do trabalho, para imóveis residenciais, comerciais e industriais.
 
 ## Contato
 
@@ -8,16 +8,18 @@
 - E-mail: debora@dlimaengenharia.com.br
 - Instagram: @d.lima.engenharia
 - Endereço: Av. Brigadeiro Faria Lima, 1811, Sala 1119, Jardim Paulistano, CEP 01452-001, São Paulo/SP
-- Área de atendimento: São Paulo/SP
+- Área de atendimento: Grande São Paulo (capital, Guarulhos e região metropolitana) e outras cidades do Estado de São Paulo, conforme a demanda
 
 ## Serviços
 
-- Combate a Incêndio: projeto de combate a incêndio, treinamento de brigada, AVCB (Auto de Vistoria do Corpo de Bombeiros) e CLCB (Certificado de Licença do Corpo de Bombeiros).
+- AVCB e CLCB: AVCB (Auto de Vistoria do Corpo de Bombeiros), CLCB (Certificado de Licença do Corpo de Bombeiros), projeto de bombeiro (projeto de combate a incêndio), renovação e treinamento de brigada.
+- Licença de Funcionamento: ALF (Auto de Licença de Funcionamento), licença para abertura, mudança de endereço ou de atividade, renovação e regularização.
+- Licença Ambiental: Licença de Operação na CETESB (licença ambiental da indústria), Licença Prévia e de Instalação, licenciamento na Secretaria do Verde e Meio Ambiente e renovações.
+- Vigilância Sanitária: licença sanitária (alvará sanitário), cadastro, renovação e adequações exigidas na inspeção.
+- Certificado Digital: e-CPF para pessoa física e e-CNPJ para pessoa jurídica, emissão e renovação.
+- Regularização de Imóveis: imóveis residenciais, comerciais e industriais; projeto e aprovação na prefeitura; usucapião; Anistia; Habite-se.
+- Acessibilidade e AVS: projetos e certificado de acessibilidade e segurança; AVS (Auto de Verificação de Segurança).
 - Segurança do Trabalho: laudos, projetos e treinamentos.
-- Alvarás: alvará de funcionamento, alvará sanitário e certificado digital para pessoa física e jurídica.
-- Regularização de Imóveis: imóveis residenciais, comerciais e industriais; usucapião; Anistia 2025; Habite-se.
-- Acessibilidade: projetos e certificado de acessibilidade e segurança.
-- Licenciamento Ambiental: licenças e documentos para atividades que exigem autorização ambiental.
 
 ## Como funciona
 
@@ -30,9 +32,11 @@
 
 - [Início](https://www.dlimaengenharia.com.br/): serviços, sobre a empresa e perguntas frequentes.
 - [Contato](https://www.dlimaengenharia.com.br/contato): canais de atendimento e endereço.
-- [AVCB, CLCB e combate a incêndio](https://www.dlimaengenharia.com.br/servicos/combate-a-incendio)
+- [AVCB, CLCB e projeto de bombeiro](https://www.dlimaengenharia.com.br/servicos/combate-a-incendio)
+- [Licença de funcionamento e ALF](https://www.dlimaengenharia.com.br/servicos/alvaras)
+- [Licença de Operação CETESB e licenciamento ambiental](https://www.dlimaengenharia.com.br/servicos/licenciamento-ambiental)
+- [Licença sanitária e Vigilância Sanitária](https://www.dlimaengenharia.com.br/servicos/vigilancia-sanitaria)
+- [Certificado digital e-CPF e e-CNPJ](https://www.dlimaengenharia.com.br/servicos/certificado-digital)
+- [Regularização de imóveis, Habite-se, Anistia e usucapião](https://www.dlimaengenharia.com.br/servicos/regularizacao-de-imoveis)
+- [Acessibilidade e AVS (NBR 9050)](https://www.dlimaengenharia.com.br/servicos/acessibilidade)
 - [Segurança do Trabalho](https://www.dlimaengenharia.com.br/servicos/seguranca-do-trabalho)
-- [Alvará de funcionamento e alvará sanitário](https://www.dlimaengenharia.com.br/servicos/alvaras)
-- [Regularização de imóveis, Habite-se, Anistia 2025 e usucapião](https://www.dlimaengenharia.com.br/servicos/regularizacao-de-imoveis)
-- [Acessibilidade (NBR 9050)](https://www.dlimaengenharia.com.br/servicos/acessibilidade)
-- [Licenciamento ambiental](https://www.dlimaengenharia.com.br/servicos/licenciamento-ambiental)

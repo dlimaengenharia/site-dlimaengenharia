@@ -7,7 +7,7 @@ import { ArrowIcon } from "@/components/SiteIcons";
 import { whatsappLink } from "@/lib/site";
 import styles from "./Hero.module.css";
 
-const words = ["AVCB e CLCB", "Alvarás", "Habite-se", "Regularização", "Acessibilidade", "Licenças"];
+const words = ["AVCB e CLCB", "Projeto de bombeiro", "Licença de funcionamento", "Licença CETESB", "Vigilância Sanitária", "Certificado digital"];
 
 export default function Hero() {
   const sectionRef = useRef(null);
@@ -35,7 +35,7 @@ export default function Hero() {
         <div className={styles.copy}>
           <span className={styles.badge}>
             <span className={styles.dot} />
-            Engenharia e regularização · São Paulo
+            Engenharia e regularização · Grande São Paulo
           </span>
 
           <h1 className={styles.title}>

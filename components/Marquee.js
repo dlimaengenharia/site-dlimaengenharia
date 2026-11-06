@@ -3,17 +3,18 @@ import styles from "./Marquee.module.css";
 const items = [
   "AVCB",
   "CLCB",
-  "Projeto de combate a incêndio",
-  "Brigada de incêndio",
-  "Alvará de funcionamento",
-  "Alvará sanitário",
-  "Habite-se",
-  "Usucapião",
-  "Anistia 2025",
-  "Laudos técnicos",
-  "Acessibilidade",
-  "Licenciamento ambiental",
+  "Projeto de bombeiro",
+  "Licença de funcionamento (ALF)",
+  "Licença de Operação CETESB",
+  "Secretaria do Verde e Meio Ambiente",
+  "Vigilância Sanitária",
   "Certificado digital",
+  "Brigada de incêndio",
+  "Habite-se",
+  "Anistia",
+  "Usucapião",
+  "Acessibilidade e AVS",
+  "Laudos técnicos",
 ];
 
 export default function Marquee() {

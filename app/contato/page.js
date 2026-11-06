@@ -8,7 +8,7 @@ import styles from "./page.module.css";
 export const metadata = {
   title: "Contato",
   description:
-    "Fale com a D'Lima Engenharia pelo WhatsApp (11) 98483-7520, e-mail ou Instagram. Atendimento em São Paulo para AVCB, alvarás e regularização de imóveis.",
+    "Fale com a D'Lima Engenharia pelo WhatsApp (11) 98483-7520, e-mail ou Instagram. Atendimento na Grande São Paulo para AVCB, licença de funcionamento, licença CETESB e vigilância sanitária.",
   alternates: { canonical: "/contato" },
 };
 
